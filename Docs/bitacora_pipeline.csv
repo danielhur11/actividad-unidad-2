@@ -1,0 +1,23 @@
+﻿Paso,Variable,Acción,Registros_afectados,Justificación
+4.1,categoria_producto,Corrección de codificación de caracteres,1764,Se corrigieron caracteres dañados para evitar categorías artificialmente diferentes.
+4.1,metodo_pago,Corrección de codificación de caracteres,4445,Se corrigieron caracteres dañados para evitar categorías artificialmente diferentes.
+4.1,canal,Corrección de codificación de caracteres,5051,Se corrigieron caracteres dañados para evitar categorías artificialmente diferentes.
+4.1,ciudad_envio,Corrección de codificación de caracteres,4277,Se corrigieron caracteres dañados para evitar categorías artificialmente diferentes.
+4.1,producto_devuelto,Corrección de codificación de caracteres,284,Se corrigieron caracteres dañados para evitar categorías artificialmente diferentes.
+4.3,id_transaccion,Homologación de categorías,7835,Se estandarizó la escritura de categorías equivalentes.
+4.3,categoria_producto,Homologación de categorías,434,Se estandarizó la escritura de categorías equivalentes.
+4.3,metodo_pago,Homologación de categorías,1606,Se estandarizó la escritura de categorías equivalentes.
+4.3,dispositivo,Homologación de categorías,1929,Se estandarizó la escritura de categorías equivalentes.
+4.3,ciudad_envio,Homologación de categorías,414,Se estandarizó la escritura de categorías equivalentes.
+5,Dataset completo,Eliminación de registros completamente duplicados,74,"Los registros idénticos pueden sobreestimar métricas de compras, ingresos y comportamiento."
+6.1,id_transaccion,Creación de identificadores técnicos para valores faltantes,243,Se conserva la información de la transacción sin inventar un identificador original.
+6.2,id_cliente,Asignación de código técnico -1 para cliente desconocido,264,Se evita atribuir artificialmente una transacción a un cliente existente.
+6.3,dispositivo,Creación de categoría Desconocido,252,Se conserva el registro sin alterar artificialmente la distribución de las categorías existentes.
+6.4,fecha_compra,Conversión a datetime y conservación de valores faltantes,251,No se imputan fechas artificiales para evitar distorsionar los análisis temporales.
+7.1,ciudad_envio,Corrección manual de categorías con codificación residual,45,Se corrigieron las categorías Ibagué y Cúcuta que conservaron caracteres dañados después de la normalización inicial.
+8,Varias variables,Conversión y ajuste de tipos de datos,8006,Se asignaron tipos coherentes con el significado y uso de cada variable.
+9,precio_cop,Identificación de valores atípicos mediante IQR,1395,Los valores se conservaron porque no existe evidencia suficiente para considerarlos errores.
+10,Variables categóricas,Codificación One-Hot Encoding,8006,Las categorías nominales se transformaron sin imponer relaciones de orden entre ellas.
+11,Variables numéricas,Estandarización mediante StandardScaler,8006,Se homogeneizaron las escalas numéricas para preparar los datos para futuros algoritmos.
+12.4,categoria_producto,Corrección manual de codificación residual,76,Se corrigió la categoría Electrónica que conservaba caracteres dañados después de la normalización.
+12,Dataset completo,Auditoría final de calidad,8006,"Se verificó el resultado final del pipeline en términos de completitud, consistencia, unicidad, validez y codificación."
