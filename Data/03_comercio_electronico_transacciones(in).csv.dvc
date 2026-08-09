@@ -1,0 +1,5 @@
+outs:
+- md5: 7c80d6d0ad573ace3a034b6f89067d41
+  size: 764675
+  hash: md5
+  path: 03_comercio_electronico_transacciones(in).csv
